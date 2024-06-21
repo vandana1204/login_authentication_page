@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Registration Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="form-toggle">
+        <button id="loginToggle">Login</button>
+        <button id="registerToggle">Register</button>
+      </div>
+      <div id="loginFormContainer" class="form-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+          <div class="form-control">
+            <label for="loginUsername">Username</label>
+            <input type="text" id="loginUsername" name="username" required />
+          </div>
+          <div class="form-control">
+            <label for="loginPassword">Password</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="password"
+              required
+            />
+          </div>
+          <button type="submit">Login</button>
+          <p id="loginErrorMsg" class="error-msg"></p>
+        </form>
+      </div>
+      <div id="registerFormContainer" class="form-container hidden">
+        <h1>Register</h1>
+        <form id="registerForm">
+          <div class="form-control">
+            <label for="registerUsername">Username</label>
+            <input type="text" id="registerUsername" name="username" required />
+          </div>
+          <div class="form-control">
+            <label for="registerPassword">Password</label>
+            <input
+              type="password"
+              id="registerPassword"
+              name="password"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="registerConfirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="registerConfirmPassword"
+              name="confirmPassword"
+              required
+            />
+          </div>
+          <button type="submit">Register</button>
+          <p id="registerErrorMsg" class="error-msg"></p>
+        </form>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
